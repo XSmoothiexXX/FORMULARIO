@@ -10,16 +10,20 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <form action="form.php" method="POST">
+        Nombre: <input type="text" name="nombre" >
         Edad: <input type="text" name="edad">
 	Ciudad:
 	<select name="ciudad">
-		<option value="Barcelona"></option>
-		<option value="Girona"></option>
-		<option value="Lleida"></option>
-		<option value="Tarragona"></option>
+		<option value="Barcelona">Barcelona</option>
+		<option value="Girona">Girona</option>
+		<option value="Lleida">Lleide</option>
+		<option value="Tarragona">Tarragona</option>
 	</select>
 	Sexo:
 	Hombre: <input type="radio" name="sex" value="hombre">
 	Mujer: <input type="radio" name="sex" value="mujer">
+        <input type="submit" value="Enviar">
+    </form>
     </body>
 </html>
